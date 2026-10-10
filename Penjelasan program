@@ -1,0 +1,26 @@
+# Tower of Hanoi Menggunakan Python
+
+## Deskripsi
+Tower of Hanoi adalah permainan logika yang bertujuan memindahkan seluruh cakram dari tiang A ke tiang C dengan bantuan tiang B.
+
+## Aturan permainan
+1. Hanya satu cakram yang boleh dipindahkan dalam satu langkah.
+2. Cakram yang lebih besar tidak boleh diletakkan di atas cakram yang lebih kecil.
+3. Cakram dapat dipindahkan melalui tiang bantuan B.
+
+## Cara kerja program
+Program menggunakan konsep **rekursi**, yaitu fungsi yang memanggil dirinya sendiri untuk menyelesaikan masalah secara bertahap.
+
+Parameter yang digunakan:
+- `n`: jumlah cakram yang dipindahkan.
+- `asal`: tiang tempat cakram berada.
+- `bantuan`: tiang sementara.
+- `tujuan`: tiang tujuan akhir.
+
+Jika jumlah cakram hanya satu, program langsung memindahkan cakram ke tiang tujuan. Jika jumlahnya lebih dari satu, program memindahkan cakram bagian atas ke tiang bantuan, memindahkan cakram terbesar ke tujuan, lalu memindahkan kembali cakram yang tersisa ke tujuan.
+
+## Hasil program
+Untuk tiga cakram, program menghasilkan tujuh langkah pemindahan hingga seluruh cakram berada di tiang C.
+
+## Kesimpulan
+Program Tower of Hanoi menunjukkan penerapan fungsi rekursif dalam Python untuk menyelesaikan masalah secara sistematis dan efisien.
